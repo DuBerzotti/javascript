@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Minha página</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--Estou informando onde esta meu javascript colocando o
+    caminho em src-->
+</head>
+<body onload = "load()"> <!--Enquanto carrega chamo uma função-->
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <!--Pela função onclick informo qual funão deve ser excutada-->
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    
+    <select onchange="funcaoChange(this)"> <!--Sempre que alterar o valor consigo coletar o valor-->
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+
+</body>
+
+
+</html>
